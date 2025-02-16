@@ -19,6 +19,7 @@ class RuntimeEnv:
         return RuntimeEnv._instance
 
     def __init__(self):
+        self.LOG_LEVEL = os.getenv("LOG_LEVEL")
         self.SQS_REGION = os.getenv("SQS_REGION")
         self.SQS_ENDPOINT = os.getenv("SQS_ENDPOINT")
         self.SQS_QUEUE_URL = os.getenv("SQS_QUEUE_URL")
