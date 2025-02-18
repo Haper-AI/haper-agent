@@ -20,7 +20,12 @@ To get started, ensure you have the following installed:
 
 1. This project use python-dotenv to load runtime envs. First create your own .env file to the root of this project
    ```text
-   
+   LOG_LEVEL=<log level, DEBUG,INFO, WARNING, etc>
+   SQS_REGION=<your sqs resource region>
+   SQS_ENDPOINT=<your sqs endpoint>
+   SQS_QUEUE_URL=<your sqs queue url>
+   AWS_ACCESS_KEY_ID=<your sqs access key id>
+   AWS_SECRET_ACCESS_KEY=<your sqs secret access key>
    ```
 
 2. Create Virtual Env or using exist one and install pip dependencies
@@ -33,7 +38,7 @@ To get started, ensure you have the following installed:
 3. Run the application:
 
    ```bash
-   
+   python app.py
    ```
 
 ---
